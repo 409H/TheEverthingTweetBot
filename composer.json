@@ -18,6 +18,9 @@
     },
     "extra": {
         "hooks": {
+            "config": {
+                "stop-on-failure": ["pre-push"]
+            },
             "pre-commit": [
                 "echo committing as $(git config user.name)",
                 "php-cs-fixer fix src/"
