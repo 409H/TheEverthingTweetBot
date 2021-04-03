@@ -32,5 +32,8 @@
             "description": "The Consumer Secret given to you by Twitter",
             "value": ""
         }
-    }
+    },
+    "addons": [
+        "scheduler"
+    ]
 }
