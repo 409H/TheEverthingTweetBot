@@ -15,7 +15,6 @@ jobs:
             with:
               php_version: 7.3
               version: 2
-              command: composer install
 
           - name: running php unit
             run: composer run test
