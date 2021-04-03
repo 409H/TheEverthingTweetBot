@@ -1,0 +1,36 @@
+{
+    "name": "The Everything Tweet Bot",
+    "description": "A simgple Twitter bot to tweet a random phrase",
+    "repository": "",
+    "keywords": [],
+    "env": {
+        "WORDS_PREFIX": {
+            "description": "The prefix of the sentence to tweet",
+            "value": ""
+        },
+        "WORDS_SUFFIX": {
+            "description": "The suffix of the sentence to tweet",
+            "value": ""
+        },
+        "WORDS_SEPARATOR": {
+            "description": "The separator for the words",
+            "value": " "
+        },
+        "TWITTER_OAUTH_ACCESS_TOKEN": {
+            "description": "The OAuth Access Token given to you by Twitter",
+            "value": ""
+        },
+        "TWITTER_OAUTH_ACCESS_TOKEN_SECRET": {
+            "description": "The OAuth Access Token Secret given to you by Twitter",
+            "value": ""
+        },
+        "TWITTER_CONSUMER_KEY": {
+            "description": "The Consumer Key given to you by Twitter",
+            "value": ""
+        },
+        "TWITTER_CONSUMER_SECRET": {
+            "description": "The Consumer Secret given to you by Twitter",
+            "value": ""
+        }
+    }
+}

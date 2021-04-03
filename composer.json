@@ -1,0 +1,43 @@
+{
+    "name": "harrydenley/the-everthing-tweet-bot",
+    "authors": [
+        {
+            "name": "HARRY DENLEY",
+            "email": "HARRY.DENLEY@OUTLOOK.COM"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/",
+            "src/Phraser.php"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit tests/",
+        "app": "@php ./src/index.php"
+    },
+    "extra": {
+        "hooks": {
+            "pre-commit": [
+                "echo committing as $(git config user.name)",
+                "php-cs-fixer fix src/"
+            ],
+            "pre-push": [
+                "php-cs-fixer fix --dry-run src/",
+                "composer run test"
+            ],
+            "post-merge": "composer install"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "j7mbo/twitter-api-php": "^1.0",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^190.0",
+        "phpunit/phpunit": "^9",
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "brainmaestro/composer-git-hooks": "^2.8"
+    }
+}
