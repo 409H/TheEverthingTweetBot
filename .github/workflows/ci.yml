@@ -1,6 +1,12 @@
 name: CI
 
-on: [push]
+on: 
+    push:
+        branches:
+            - master
+        pull_request:
+
+name: PHPUnit test project
 
 jobs:
     build-test:
