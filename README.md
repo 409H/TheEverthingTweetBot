@@ -1,8 +1,8 @@
 # The Everything Tweet Bot
 
-This is a Twitter bot that makes use of Heroku and Heroku Scheduler to tweet a phrase of "[adjective] [noun] [suffix]" such as "Crypto Punks" or "Awesome Punks".
+This is a Twitter bot that makes use of Heroku and Heroku Scheduler to tweet a phrase of "[prefix] [adjective] [noun] [suffix]" such as "Acrobatic Meat Punks" or "The Confused Red Punks".
 
-The output being `{$prefix}{$adjective}{$noun}{$suffix}`
+The output structure: `{$prefix}{$adjective}{$noun}{$suffix}`
 
 It is written in PHP because brother likes it
 ![/jordan.png](/jordan.png)
