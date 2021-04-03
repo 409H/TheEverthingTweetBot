@@ -12,8 +12,8 @@ jobs:
     build-test:
         runs-on: ubuntu-latest
         steps:
-        - uses: php-actions/composer@v5
         - name: Running tests
+        uses: php-actions/composer@v5
         with:
             php_version: 7.3
             version: 2
