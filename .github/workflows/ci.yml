@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+    build-test:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: php-actions/composer@v5
+        
+        - name: Running tests
+        with:
+            php_version: 7.3
+            version: 2
+            command: composer run test

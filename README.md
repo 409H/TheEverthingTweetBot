@@ -15,6 +15,8 @@ composer run test
 composer run app
 ```
 
+Add to the wordlists in `data/` - words need to be separated by a new line.
+
 ### Installation
 
 ##### Heroku
