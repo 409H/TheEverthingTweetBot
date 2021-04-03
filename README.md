@@ -51,6 +51,8 @@ Add to the wordlists in `data/` - words need to be separated by a new line.
 
 ##### Heroku
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2F409H%2FTheEverthingTweetBot)
+
 ```
 heroku config:set WORDS_PREFIX=""
 heroku config:set WORDS_SUFFIX=""
