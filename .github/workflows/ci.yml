@@ -1,20 +1,16 @@
 name: CI
-
 on: 
     push:
         branches:
             - master
         pull_request:
-
-name: PHPUnit test project
-
 jobs:
     build-test:
         runs-on: ubuntu-latest
         steps:
         - name: Running tests
-        uses: php-actions/composer@v5
-        with:
-            php_version: 7.3
-            version: 2
-            command: composer run test
+          uses: php-actions/composer@v5
+          with:
+              php_version: 7.3
+              version: 2
+              command: composer run test
