@@ -21,7 +21,7 @@ final class Phraser
             $_ENV["WORDS_SUFFIX"]
         ];
 
-        return trim(implode($phrase, $_ENV["WORDS_SEPARATOR"]));
+        return trim(implode($_ENV["WORDS_SEPARATOR"], $phrase));
     }
 
     private function getNoun(): string
