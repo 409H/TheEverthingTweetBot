@@ -5,16 +5,19 @@
     "keywords": [],
     "env": {
         "WORDS_PREFIX": {
-            "description": "The prefix of the sentence to tweet",
-            "value": ""
+            "description": "The prefix of the sentence to tweet (dont fill in unless you want a word)",
+            "value": "",
+            "required": false
         },
         "WORDS_SUFFIX": {
-            "description": "The suffix of the sentence to tweet",
-            "value": ""
+            "description": "The suffix of the sentence to tweet (dont fill in unless you want a word)",
+            "value": "",
+            "required": false
         },
         "WORDS_SEPARATOR": {
-            "description": "The separator for the words",
-            "value": " "
+            "description": "The separator for the words (dont fill in if you want to use a space)",
+            "value": "",
+            "required": false
         },
         "TWITTER_OAUTH_ACCESS_TOKEN": {
             "description": "The OAuth Access Token given to you by Twitter",

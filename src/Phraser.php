@@ -15,13 +15,13 @@ final class Phraser
     public function generate(): string
     {
         $phrase = [
-            $_ENV["WORDS_PREFIX"],
+            $_ENV["WORDS_PREFIX"] ?? '',
             ucwords($this->getAdjective()),
             ucwords($this->getNoun()),
-            $_ENV["WORDS_SUFFIX"]
+            $_ENV["WORDS_SUFFIX"] ?? ''
         ];
 
-        return trim(implode($_ENV["WORDS_SEPARATOR"], $phrase));
+        return trim(implode($_ENV["WORDS_SEPARATOR"] ?? ' ', $phrase));
     }
 
     private function getNoun(): string
