@@ -94,5 +94,7 @@ heroku config:set TWITTER_CONSUMER_SECRET=""
 Once built, go to the Heroku app dashboard and click the `Heroku Scheduler` app.
 
 a) Press `Add Job`
-b) Schedule: <whatever interval you want>
+
+b) Schedule: `<whatever interval you want>`
+
 c) Run command: `composer run app`
