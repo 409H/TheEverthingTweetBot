@@ -10,8 +10,14 @@ jobs:
         name: Running tests
         runs-on: ubuntu-latest
         steps:
-          uses: php-actions/composer@v5
-          with:
+          - uses: php-actions/composer@v5
+            with:
               php_version: 7.3
               version: 2
-              command: composer run test
+
+          - name: running php unit
+            working-directory: ./
+            run: composer run test
+            env:
+                ENVIRONMENT: dev
+        
