@@ -33,6 +33,7 @@
         }
     },
     "require": {
+        "php": "^7",
         "guzzlehttp/guzzle": "^7.3",
         "j7mbo/twitter-api-php": "^1.0",
         "vlucas/phpdotenv": "^5.3"
