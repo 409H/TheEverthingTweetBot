@@ -16,7 +16,6 @@ jobs:
               version: 2
 
           - name: running php unit
-            working-directory: ./
             run: composer run test
             env:
                 ENVIRONMENT: dev
